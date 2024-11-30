@@ -1,0 +1,23 @@
+[{
+    "name": "Chicken W Skin",
+    "price": 240
+}, {
+    "name": "Chicken W/O Skin",
+    "price": 260
+}, {
+    "name": "Chicken Boneless",
+    "price": 320
+}, {
+    "name": "Chicken Liver",
+    "price": 200
+}, {
+    "name": "Chiicken Wholesale",
+    "price": 200
+}, {
+    "name": "Offer Egg",
+    "price": 3
+}, {
+    "name": "Normal Egg",
+    "price": 5
+}
+]
