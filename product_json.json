@@ -1,22 +1,48 @@
 [{
     "name": "Chicken W Skin",
-    "price": 240
-}, {
+    "price": 220
+}, 
+{
     "name": "Chicken W/O Skin",
-    "price": 260
-}, {
+    "price": 240
+}, 
+{
     "name": "Chicken Boneless",
-    "price": 320
-}, {
+    "price": 350
+}, 
+{
     "name": "Chicken Liver",
+    "price": 180
+},
+{
+    "name": "Chicken Wings",
+    "price": 240
+},
+{
+    "name": "Chicken Legs",
+    "price": 240
+}, 
+{
+    "name": "Chicken Live Rate",
+    "price": 160
+},
+{
+    "name": "Chicken Live Rate Wholesale",
+    "price": 140
+},
+{
+    "name": "Chicken Wholesale",
     "price": 200
-}, {
-    "name": "Chiicken Wholesale",
-    "price": 200
-}, {
+},
+{
+    "name": "Chicken Bulk Wholesale",
+    "price": 175
+}, 
+{
     "name": "Offer Egg",
     "price": 3
-}, {
+}, 
+{
     "name": "Normal Egg",
     "price": 5
 }

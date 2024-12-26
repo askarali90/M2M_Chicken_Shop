@@ -57,7 +57,7 @@ Email: oretnom23@gmail.com
                 </div>
                 <div class="tab-pane fade" id="billing" role="tabpanel" aria-labelledby="billing-tab">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                             <div class="card rounded-5 shadow mb-3">
                                 <div class="card-body">
                                     <div class="container-fluid">
@@ -68,19 +68,28 @@ Email: oretnom23@gmail.com
                                         <form action="" id="add-form">
                                             <input type="hidden" name="name" value="">
                                             <input type="hidden" name="price" value="">
+                                            
                                             <div class="form-group mb-3 position-relative">
                                                 <label for="find-product" class="control-label">Find Product</label>
                                                 <input type="search" id="find-product" class="form-control form-control-sm rounded-5" placeholder="i.e. Chicken W Skin">
                                                 <div class="list-group position-absolute w-100 overflow-auto d-none bg-light bg-gradient border" id="product-result"></div>
                                             </div>
                                             <div class="form-group">
+                                                <button class="btn btn-xs btn-warning rounded-5 bg-gradient mb-2" id="wsHalf" type="button" form="add-form"><i class="fa-circle-plus"></i>500gm WS</button>
                                                 <button class="btn btn-xs btn-warning rounded-5 bg-gradient mb-2" id="wsOne" type="button" form="add-form"><i class="fa-circle-plus"></i>1kg WS</button>
+                                                <button class="btn btn-xs btn-warning rounded-5 bg-gradient mb-2" id="wsOneAndHalf" type="button" form="add-form"><i class="fa-circle-plus"></i>1.5kg WS</button>
                                                 <button class="btn btn-xs btn-warning rounded-5 bg-gradient mb-2" id="wsTwo" type="button" form="add-form"><i class="fa-circle-plus"></i>2kg WS</button>
                                                 <button class="btn btn-xs btn-warning rounded-5 bg-gradient mb-2" id="wsThree" type="button" form="add-form"><i class="fa-circle-plus"></i>3kg WS</button>
+                                                <button class="btn btn-xs btn-warning rounded-5 bg-gradient mb-2" id="wsFive" type="button" form="add-form"><i class="fa-circle-plus"></i>5kg WS</button>
 
-                                                <button class="btn btn-xs btn-warning rounded-5 bg-gradient" id="wosOne" type="button" form="add-form"><i class="fa-circle-plus"></i>1kg WOS</button>
-                                                <button class="btn btn-xs btn-warning rounded-5 bg-gradient" id="wosTwo" type="button" form="add-form"><i class="fa-circle-plus"></i>2kg WOS</button>
-                                                <button class="btn btn-xs btn-warning rounded-5 bg-gradient" id="wosThree" type="button" form="add-form"><i class="fa-circle-plus"></i>3kg WOS</button>
+                                                <br/>
+
+                                                <button class="btn btn-xs btn-dark rounded-5 bg-gradient mb-2" id="wosHalf" type="button" form="add-form"><i class="fa-circle-plus"></i>500gm WOS</button>
+                                                <button class="btn btn-xs btn-dark rounded-5 bg-gradient mb-2" id="wosOne" type="button" form="add-form"><i class="fa-circle-plus"></i>1kg WOS</button>
+                                                <button class="btn btn-xs btn-dark rounded-5 bg-gradient mb-2" id="wosOneAndHalf" type="button" form="add-form"><i class="fa-circle-plus"></i>1.5kg WOS</button>
+                                                <button class="btn btn-xs btn-dark rounded-5 bg-gradient mb-2" id="wosTwo" type="button" form="add-form"><i class="fa-circle-plus"></i>2kg WOS</button>
+                                                <button class="btn btn-xs btn-dark rounded-5 bg-gradient mb-2" id="wosThree" type="button" form="add-form"><i class="fa-circle-plus"></i>3kg WOS</button>
+                                                <button class="btn btn-xs btn-dark rounded-5 bg-gradient mb-2" id="wosFive" type="button" form="add-form"><i class="fa-circle-plus"></i>5kg WOS</button>
                                             </div>
                                             <dl>
                                                 <dt>Product:</dt>
@@ -92,6 +101,10 @@ Email: oretnom23@gmail.com
                                                 <label class="control-label" for="qty">QTY</label>
                                                 <input type="number" id="qty" name="qty" min='0' step="0.01" class="form-control form-control-sm rounded-5 text-end" required>
                                             </div>
+                                            <div class="form-check form-switch" style="padding-left: 0px; padding-top: 1rem;">
+                                                <label class="form-check-label" for="printToken" style="clear: both;">Print Token</label>
+                                                <input class="form-check-input" type="checkbox" id="printToken" style="float: right;" checked>
+                                              </div>
                                         </form>
                                         <hr>
                                         <div class="text-center">
@@ -116,7 +129,7 @@ Email: oretnom23@gmail.com
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                             <div class="card rounded-5 shadow">
                                 <div class="card-body">
                                     <div class="w-100 overflow-auto">

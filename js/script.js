@@ -438,8 +438,14 @@ $(function() {
 
     })
     
+    $('#wsHalf').click(function() { 
+        quickLoadProduct("Chicken W Skin", 0.5);
+    })
     $('#wsOne').click(function() { 
         quickLoadProduct("Chicken W Skin", 1);
+    })
+    $('#wsOneAndHalf').click(function() { 
+        quickLoadProduct("Chicken W Skin", 1.5);
     })
     $('#wsTwo').click(function() { 
         quickLoadProduct("Chicken W Skin", 2);
@@ -447,15 +453,27 @@ $(function() {
     $('#wsThree').click(function() { 
         quickLoadProduct("Chicken W Skin", 3);
     })
+    $('#wsFive').click(function() { 
+        quickLoadProduct("Chicken W Skin", 5);
+    })
 
+    $('#wosHalf').click(function() { 
+        quickLoadProduct("Chicken W/O Skin", 0.5);
+    })
     $('#wosOne').click(function() { 
         quickLoadProduct("Chicken W/O Skin", 1);
+    })
+    $('#wosOneAndHalf').click(function() { 
+        quickLoadProduct("Chicken W/O Skin", 1.5);
     })
     $('#wosTwo').click(function() { 
         quickLoadProduct("Chicken W/O Skin", 2);
     })
     $('#wosThree').click(function() { 
         quickLoadProduct("Chicken W/O Skin", 3);
+    })
+    $('#wosFive').click(function() { 
+        quickLoadProduct("Chicken W/O Skin", 5);
     })
 
     $('#add-form').submit(function(e) {
@@ -503,10 +521,14 @@ $(function() {
                     el.html(resp)
 
                     var token = generateToken();
-                    el.append('<div class="fw-bold text-left ml-3">Token #: ' + token + '</div>');
-                    el.append('<div>-----------------------------------------------------</div>');
-                    el.append('<div class="fw-bold text-center mt-3 fs-1">Token #: ' + token + '</div>');
-
+                    console.log("Test : ", $("#printToken").is(":checked"));
+                    var includeToken = $("#printToken").is(":checked");
+                    if (includeToken) {
+                        el.append('<div class="fw-bold text-left ml-3">Token #: ' + token + '</div>');
+                        el.append('<div>-----------------------------------------------------</div>');
+                        el.append('<div class="fw-bold text-center mt-3 fs-1">Token #: ' + token + '</div>');
+                    }
+                    
                     el.find('#r-total').text(parseFloat(total).toLocaleString('en-US', { style: 'decimal', maximumFractionDigits: 2, minimumFractionDigits: 2 }))
                     el.find('#r-tendered').text(parseFloat(parseFloat(total) + parseFloat(change)).toLocaleString('en-US', { style: 'decimal', maximumFractionDigits: 2, minimumFractionDigits: 2 }))
                     el.find('#r-change').text(parseFloat(change).toLocaleString('en-US', { style: 'decimal', maximumFractionDigits: 2, minimumFractionDigits: 2 }))
